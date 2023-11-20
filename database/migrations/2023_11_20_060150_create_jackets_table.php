@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('jacket', function (Blueprint $table) {
             $table->id();
+            $table->date('created_at');
+            $table->string('nama');
+            $table->integer('stock');
+            $table->string('category');
+            $table->integer('harga');
             $table->timestamps();
         });
     }
