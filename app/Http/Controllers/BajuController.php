@@ -11,7 +11,7 @@ class BajuController extends Controller
     {
         return view('baju.all', [
             "title" => "Baju",
-            "baju" => Baju::all(),
+            "baju" => baju::all(),
         ]);
     }
 

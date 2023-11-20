@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/celana/all">Celana</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jacket/all">Jacket</a>
+        </li>
       </ul>
     </div>
   </div>

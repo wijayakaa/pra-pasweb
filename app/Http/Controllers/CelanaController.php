@@ -11,7 +11,7 @@ class CelanaController extends Controller
     {
         return view('celana.all', [
             "title" => "celana",
-            "celana" => Celana ::all(),
+            "celana" => celana ::all(),
         ]);
     }
 

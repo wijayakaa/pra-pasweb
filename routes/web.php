@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route; 
 use App\Http\Controllers\BajuController;
 use App\Http\Controllers\CelanaController;
+use App\Http\Controllers\JacketController;
+
 
 
 
@@ -31,3 +33,5 @@ Route::get('/baju/all', [BajuController::class, 'index']);
 Route::get('/celana/all', [CelanaController::class, 'index']);
 Route::get('/baju/detail', [BajuController::class, 'show']);
 Route::get('/celana/detail', [CelanaController::class, 'show']);
+Route::get('/jacket/all',[JacketController::class,'index']);
+Route::get('/jacket/detail',[JacketController::class,'show']);
