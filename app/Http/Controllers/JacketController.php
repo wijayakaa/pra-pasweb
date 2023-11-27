@@ -15,11 +15,11 @@ class JacketController extends Controller
         ]);
     }
 
-    public function show()
-    {
-        return view('jacket.show',[
-            "title" => "jacket-Detail",
-            "jacket" => Student::find($jacket)
-        ]);
+    public function show($jacket)
+{
+    return view('jacket.Detail', [
+        "title" => "jacket-Detail",
+        "jacket" => Jacket::find($jacket)
+    ]);
     }
 }

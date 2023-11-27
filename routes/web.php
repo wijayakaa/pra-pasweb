@@ -31,7 +31,7 @@ Route::get('/home', function () {
 
 Route::get('/baju/all', [BajuController::class, 'index']);
 Route::get('/celana/all', [CelanaController::class, 'index']);
-Route::get('/baju/detail', [BajuController::class, 'show']);
-Route::get('/celana/detail', [CelanaController::class, 'show']);
+Route::get('/baju/detail{baju}', [BajuController::class, 'show']);
+Route::get('/celana/detail{celana}', [CelanaController::class, 'show']);
 Route::get('/jacket/all',[JacketController::class,'index']);
-Route::get('/jacket/detail',[JacketController::class,'show']);
+Route::get('/jacket/Detail{jacket}',[JacketController::class,'show']);

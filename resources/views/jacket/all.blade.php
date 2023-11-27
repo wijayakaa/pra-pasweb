@@ -4,12 +4,12 @@
 <table class="table table-dark table-hover">
     @foreach($jacket as $jeket)
     <tr>
-        <td>{{$jeket["nama"]}}</td>
-        <td>{{$jeket["harga"]}}</td>
-        <td>{{$jeket["stock"]}}</td>
-        <td>{{$jeket["created_at"]}}</td>
+        <td>{{ $jeket->nama }}</td>
+        <td>{{ $jeket->stock }}</td>
+        <td>{{ $jeket->created_at }}</td>
+        <td>{{ $jeket->harga }}</td>
         <td>
-            <button type="button" class="btn btn-primary" href="/jeket/DetailJacket">{{$jeket-> id}} Detail</button>
+            <a type="button" class="btn btn-primary" href="/jacket/Detail{{ $jeket->id }}">Detail</a>
             <button type="button" class="btn btn-warning" href="">Edit</button>
             <button type="button" class="btn btn-danger" href="">Delete</button>
         </tr>
